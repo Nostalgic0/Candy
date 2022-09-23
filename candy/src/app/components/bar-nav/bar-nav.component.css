@@ -2,7 +2,8 @@
     background-color: rgb(28, 255, 187);
   }
   .nav-item{
-    
+    font-size: large;
+    font-weight: 600;
     color: white;
   }
   .nav-link{
