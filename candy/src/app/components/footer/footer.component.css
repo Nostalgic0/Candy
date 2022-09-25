@@ -1,0 +1,10 @@
+.container-fluid{
+    background-color: rgb(101, 255, 204);
+    color: white;
+    font-size: large;
+}
+.bi-facebook, .bi-instagram, .bi-whatsapp{
+    font-size: 50PX;
+    color: white;
+    padding: 10px;
+}
