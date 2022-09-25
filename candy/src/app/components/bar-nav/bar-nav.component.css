@@ -1,0 +1,23 @@
+.navbar{
+    background-color: rgb(28, 255, 187);
+  }
+  .nav-item{
+    font-size: large;
+    font-weight: 600;
+    color: white;
+  }
+  .nav-link{
+    color: aliceblue;
+  }
+.navbar-brand{
+    margin-left: auto; 
+    margin-right: auto;
+}  
+.logo-bar{
+    background-color: rgb(111, 250, 204);
+}
+.navbar-nav{
+    
+    margin-left: auto; 
+    margin-right: auto;
+}
