@@ -9,6 +9,7 @@ import { ComoComprarComponent } from './components/como-comprar/como-comprar.com
 import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { InicioComponent } from './components/inicio/inicio.component';
+import { ProductoComponent } from './components/producto/producto.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { InicioComponent } from './components/inicio/inicio.component';
     ComoComprarComponent,
     QuienesSomosComponent,
     FooterComponent,
-    InicioComponent
+    InicioComponent,
+    ProductoComponent
   ],
   imports: [
     BrowserModule,
