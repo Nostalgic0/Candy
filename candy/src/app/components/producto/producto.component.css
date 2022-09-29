@@ -1,0 +1,28 @@
+.contenedor-productos{
+    display: grid; /*grid sirve para acomodar estilo rejilla o tabla*/
+    grid-template-columns: repeat(4, 1fr); /*acomoda en 4 columnas, 1fr es para que ocupen el mismo espacio*/
+    grid-gap: 20px; /*espacio entre columnas*/
+    
+
+}
+
+.producto{
+    border: 1px solid #ccc;
+    padding: 20px;
+
+}
+
+.producto img{
+    width: 300px;
+    height: auto;
+    align-content: center;
+}
+
+.producto-titulo{
+    text-align: center;
+}
+
+.producto-precio{
+    color: #ff4e00;
+    font-weight: bold;
+}
