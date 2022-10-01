@@ -10,7 +10,7 @@ import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.
 import { FooterComponent } from './components/footer/footer.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { ProductoComponent } from './components/producto/producto.component';
-import { ProductoMasComponent } from './components/producto/producto.component';
+import { ProductoMasComponent } from './components/producto-mas/producto-mas.component';
 
 @NgModule({
   declarations: [
