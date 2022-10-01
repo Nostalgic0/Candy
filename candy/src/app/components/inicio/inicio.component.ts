@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { PopupComponent } from '../popup/popup.component';
 
 @Component({
   selector: 'app-inicio',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialogRef : MatDialog) { }
+
+  openDialog(){
+    this.dialogRef.open(PopupComponent);
+  }
 
   ngOnInit(): void {
   }

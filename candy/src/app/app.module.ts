@@ -9,6 +9,8 @@ import { ComoComprarComponent } from './components/como-comprar/como-comprar.com
 import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { InicioComponent } from './components/inicio/inicio.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { InicioComponent } from './components/inicio/inicio.component';
     ComoComprarComponent,
     QuienesSomosComponent,
     FooterComponent,
-    InicioComponent
+    InicioComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NoopAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
