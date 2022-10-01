@@ -8,6 +8,9 @@
   }
   .nav-link{
     color: aliceblue;
+    
+    margin: 0px 60px 0px 60px;
+    
   }
 .navbar-brand{
     margin-left: auto; 
