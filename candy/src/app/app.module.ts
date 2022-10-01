@@ -21,7 +21,8 @@ import { ProductoMasComponent } from './components/producto/producto.component';
     QuienesSomosComponent,
     FooterComponent,
     InicioComponent,
-    ProductoComponent
+    ProductoComponent,
+    ProductoMasComponent
   ],
   imports: [
     BrowserModule,
