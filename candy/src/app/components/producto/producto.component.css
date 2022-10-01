@@ -4,7 +4,7 @@
 
 .contenedor-productos{
     display: grid; /*grid sirve para acomodar estilo rejilla o tabla*/
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /*acomoda en 4 columnas, 1fr es para que ocupen el mismo espacio*/
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); /*acomoda en 4 columnas, 1fr es para que ocupen el mismo espacio*/
     grid-gap: 20px; /*espacio entre columnas*/
     /*text-align: center; /*alinea todo al centro*/
 
@@ -12,7 +12,10 @@
 
 .producto{
     border: 1px solid #ccc;
-    padding: 100px;
+    padding: 40px;
+    width: 330px;
+    height: 600px;
+    position: relative;
     /*text-align: center;*/
     
 }
@@ -20,7 +23,6 @@
 .producto img{
     width: 250px;
     height: 350px;
-    margin: 20px;
     object-fit: cover; /*no deforma la imagen, sino la corta*/
     cursor: pointer;
     transition: all 0.7s ease-in-out;
@@ -49,7 +51,7 @@
     background: #7cbfb1;
     padding: 10px 60px;
     position: absolute;
-    top: 600px;
-    left: 150px;
+    top: 515px;
+    left: 60px;
     color:white;
 }
