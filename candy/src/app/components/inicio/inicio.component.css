@@ -1,0 +1,25 @@
+
+body {
+    display: grid; /*grid sirve para acomodar estilo rejilla o tabla*/
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); /*acomoda en 4 columnas, 1fr es para que ocupen el mismo espacio*/
+}
+
+.centrar{
+    color: #5a595f;
+    text-align: center;
+    padding: 70px 0;
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+
+.contenedor-imagen{
+    position: relative;
+}
+
+.texto-encima{
+    color: #5a595f;
+    position:absolute;
+    top: 18%;
+    left: 16%;
+    font-family: 'Lobster', cursive;
+    font-size:3.2em;
+}
