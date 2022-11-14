@@ -2,13 +2,13 @@
     margin: 20px;
 }
 
-.contenedor{
+.contenedor-producto{
     display: grid; /*grid sirve para acomodar estilo rejilla o tabla*/
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /*acomoda en 4 columnas, 1fr es para que ocupen el mismo espacio*/
     grid-gap: 20px; /*espacio entre columnas*/
 }
 
-.contenedor-producto{
+.producto{
     width: 100%;
     height: 100%;
     display: flex;
@@ -17,6 +17,7 @@
     max-width: 1500px;
     margin: auto;
     border: 1px solid #ccc;
+    position: relative;
 }
 
 .box{
@@ -52,7 +53,7 @@
     transform: scale(1);
 }
 
-.contenedor-producto img{
+.producto img{
     width: 250px;
     height: 350px;
     object-fit: cover; /*no deforma la imagen, sino la corta*/

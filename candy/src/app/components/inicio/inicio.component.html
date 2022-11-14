@@ -6,28 +6,34 @@
     <!-- fuente para los titulos -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
-<div class="contenedor">
-<img src="assets\imagenes-diseño\imagen-incio.jpg" width="100%" height="auto"> 
-    <div class="texto-encima">
-        Atrévete a <br/> <!-- <br/> sirve para salto de linea -->
-        &nbsp;&nbsp; Slogan creativo <!-- &nbsp; sirve para espaciado -->
+<body>
+    <div class="contenedor">
+        <div class="contenedor-imagen">
+            <img src="assets\imagenes-diseño\imagen-incio.jpg" width="100%" height="auto"> 
+                <div class="texto-encima">
+                    <h1>
+                        Atrévete a <br/> <!-- <br/> sirve para salto de linea -->
+                        &nbsp;&nbsp; Slogan creativo <!-- &nbsp; sirve para espaciado -->
+                    </h1>
+                </div>
+            </div>
+            <nav>
+                <section>
+                    <div>
+                        <h1 class="centrar">Productos Destacados</h1>
+                        <app-producto></app-producto>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <h1 class="centrar">Los más vendidos</h1>
+                        <app-producto-mas></app-producto-mas>
+                    </div>
+                </section>
+            </nav>
+            <div>
+                    <h1 class="centrar">Cómo comprar</h1>
+                    <p class="centrar">pronto</p>
+            </div>
     </div>
-</div>
-<nav>
-    <section>
-        <div>
-            <h1 class="centrar">Productos Destacados</h1>
-            <app-producto></app-producto>
-        </div>
-    </section>
-    <section>
-        <div>
-            <h1 class="centrar">Los más vendidos</h1>
-            <app-producto-mas></app-producto-mas>
-        </div>
-    </section>
-</nav>
-<div>
-        <h1 class="centrar">Cómo comprar</h1>
-        <p class="centrar">pronto</p>
-</div>
+</body>
