@@ -1,5 +1,9 @@
+/*body{
+    display: flex;
+    min-height: 100vh;
+}*/
 
-body {
+.contenedor{
     display: grid; /*grid sirve para acomodar estilo rejilla o tabla*/
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); /*acomoda en 4 columnas, 1fr es para que ocupen el mismo espacio*/
 }
@@ -9,6 +13,11 @@ body {
     text-align: center;
     padding: 70px 0;
     font-family: 'Roboto Condensed', sans-serif;;
+}
+
+.d-block{
+    max-height: 800px;
+    object-fit: cover;
 }
 
 .contenedor-imagen{
@@ -22,4 +31,49 @@ body {
     left: 16%;
     font-family: 'Lobster', cursive;
     font-size:3.2em;
+}
+
+.contenedor_deslizador{
+    width: 90%;
+    max-width: auto; /* ancho de la imagen */
+    /*overflow: hidden;*/
+    position: relative;
+}
+.deslizador{
+    display: flex;
+    width: 300%; /* depende de la cantidad de imagenes*/
+    height: 800px;
+    margin-left: -100%;
+}
+.seccion_deslizador{
+    width: 100%;
+}
+.img_deslizador{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.btn_deslizador{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.btn_deslizador:hover{
+    background: #fff;
+}
+.btn_derecha_deslizador{
+    right: 10px;
+}
+.btn_izquierda_deslizador{
+    left: 10px;
 }

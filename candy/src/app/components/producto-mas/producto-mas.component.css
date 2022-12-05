@@ -2,68 +2,43 @@
     margin: 20px;
 }
 
-.contenedor-producto{
+.contenedor-productos{
     display: grid; /*grid sirve para acomodar estilo rejilla o tabla*/
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /*acomoda en 4 columnas, 1fr es para que ocupen el mismo espacio*/
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); /*acomoda en 4 columnas, 1fr es para que ocupen el mismo espacio*/
     grid-gap: 20px; /*espacio entre columnas*/
+    /*text-align: center; /*alinea todo al centro*/
+
 }
 
 .producto{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1500px;
-    margin: auto;
     border: 1px solid #ccc;
+    padding: 40px;
+    width: 330px;
+    height: 600px;
     position: relative;
-}
-
-.box{
-    width: 250px;
-    height: 350px;
-    position: relative;
-    overflow: hidden;
-    margin: 20px;
-    border: 3px solid #fff;
-}
-
-.box img{
-    width: 100%;
-    height: 100%;
-}
-
-.capa{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:#fff;
-    transform: scale(0);
-    transition: .3s ease;
-}
-
-.box:hover .capa{
-    transform: scale(1);
+    /*text-align: center;*/
+    
 }
 
 .producto img{
     width: 250px;
     height: 350px;
     object-fit: cover; /*no deforma la imagen, sino la corta*/
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
     position: relative;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
 }
 
+.producto img:hover{
+    transform: scale(1.1);
+}
+
 .producto-titulo{
     margin-top: 10px;
+    /*text-align: center;*/
 }
 
 .producto-precio{
@@ -71,3 +46,12 @@
     font-weight: bold;
 }
 
+.producto:before{
+    content: "Descripción";
+    background: #7cbfb1;
+    padding: 10px 60px;
+    position: absolute;
+    top: 515px;
+    left: 60px;
+    color:white;
+}
