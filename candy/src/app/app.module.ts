@@ -24,6 +24,9 @@ import { MesasComponent } from './components/mesas/mesas.component';
 import { PizarrasComponent } from './components/pizarras/pizarras.component';
 import { RepisasComponent } from './components/repisas/repisas.component';
 import { TodosProductosComponent } from './components/todos-productos/todos-productos.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -52,7 +55,9 @@ import { TodosProductosComponent } from './components/todos-productos/todos-prod
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore())
   ],
   providers: [],
   bootstrap: [AppComponent]
