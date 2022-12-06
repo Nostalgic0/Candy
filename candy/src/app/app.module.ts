@@ -10,7 +10,7 @@ import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.
 import { FooterComponent } from './components/footer/footer.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { ProductoComponent } from './components/producto/producto.component';
-import { ProductoMasComponent } from './components/producto-mas/producto-mas.component';
+
 import { AlzadoresComponent } from './components/alzadores/alzadores.component';
 import { BandejasComponent } from './components/bandejas/bandejas.component';
 import { CarrosComponent } from './components/carros/carros.component';
@@ -27,6 +27,7 @@ import { TodosProductosComponent } from './components/todos-productos/todos-prod
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { ProductomasComponent } from './components/productomas/productomas.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,7 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
     FooterComponent,
     InicioComponent,
     ProductoComponent,
-    ProductoMasComponent,
+    ProductoComponent,
     AlzadoresComponent,
     BandejasComponent,
     CarrosComponent,
@@ -51,7 +52,9 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
     MesasComponent,
     PizarrasComponent,
     RepisasComponent,
-    TodosProductosComponent
+    TodosProductosComponent,
+    ProductomasComponent
+  
   ],
   imports: [
     BrowserModule,

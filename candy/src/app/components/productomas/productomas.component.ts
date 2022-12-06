@@ -2,18 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import Producto from 'src/app/interfaces/producto.interface';
 import { ProductoService } from 'src/app/services/producto.service';
 @Component({
-  selector: 'app-producto',
-  templateUrl: './producto.component.html',
-  styleUrls: ['./producto.component.css']
+  selector: 'app-productomas',
+  templateUrl: './productomas.component.html',
+  styleUrls: ['./productomas.component.css']
 })
-export class ProductoComponent implements OnInit {
+export class ProductomasComponent implements OnInit {
 
-  productos: Producto[];
+  productosmas: Producto[];
 
   constructor(
     private productoSevice: ProductoService
   ) { 
-    this.productos = [{
+    this.productosmas = [{
       nombreProducto: '',
       precioProducto: 50,
       categoriaProducto: 'mesa',
@@ -24,9 +24,8 @@ export class ProductoComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.productoSevice.getProductos().subscribe(productos => {
-      this.productos = productos;
+    this.productoSevice.getProductosmas().subscribe(productosmas => {
+      this.productosmas = productosmas;
     })
   }
-
 }

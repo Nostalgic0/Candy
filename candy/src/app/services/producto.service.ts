@@ -16,6 +16,11 @@ export class ProductoService {
     return collectionData(productoRef, { idField: 'id' }) as Observable<Producto[]>;
   }
 
+  getProductosmas(): Observable<Producto[]> {
+    const productoRef = collection(this.firestore, 'productomas');
+    return collectionData(productoRef, { idField: 'id' }) as Observable<Producto[]>;
+  }
+
   getAlzadores(): Observable<Producto[]> {
     const productoRef = collection(this.firestore, 'alzadores');
     return collectionData(productoRef, { idField: 'id' }) as Observable<Producto[]>;

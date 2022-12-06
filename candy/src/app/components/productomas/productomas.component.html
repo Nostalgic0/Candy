@@ -9,12 +9,12 @@
                 
                     <main class="contenedor-main">
                         <div class="contenedor-productos">
-                            <div class="producto" *ngFor="let productos of productos">
+                            <div class="producto" *ngFor="let productosmas of productosmas">
                                             
-                                            <img src="{{productos.fotoProducto}}" alt="" class="producto-imagen">
+                                            <img src="{{productosmas.fotoProducto}}" alt="" class="producto-imagen">
                                             <div class="producto-descripcion">
-                                                <h4 class="producto-titulo">{{productos.nombreProducto}}</h4>
-                                                <span class="producto-precio">${{productos.precioProducto}}</span>
+                                                <h4 class="producto-titulo">{{productosmas.nombreProducto}}</h4>
+                                                <span class="producto-precio">${{productosmas.precioProducto}}</span>
                                                 
                                             </div>
                                                 <div class="btn_ventana_emergente">
@@ -28,15 +28,15 @@
                                                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                                             <div class="modal-content">
                                                                 <div class="modal-header">
-                                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">{{productos.nombreProducto}}</h1>
+                                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">{{productosmas.nombreProducto}}</h1>
                                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    <img src="{{productos.fotoProducto}}" alt="" class="producto-imagen">
+                                                                    <img src="{{productosmas.fotoProducto}}" alt="" class="producto-imagen">
                                                                     <h4 class="descripcion-imagen-emergente">
-                                                                        {{productos.descripcionProducto}}
+                                                                        {{productosmas.descripcionProducto}}
                                                                     </h4>
-                                                                    <span class="producto-precio">${{productos.precioProducto}}</span>
+                                                                    <span class="producto-precio">${{productosmas.precioProducto}}</span>
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

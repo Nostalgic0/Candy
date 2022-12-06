@@ -10,6 +10,13 @@
 
 }
 
+.centrar{
+    color: #5a595f;
+    text-align: center;
+    padding: 70px 0;
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+
 .producto{
     border: 1px solid #ccc;
     padding: 40px;
@@ -17,6 +24,7 @@
     height: 600px;
     position: relative;
     /*text-align: center;*/
+    align-items: center;
     
 }
 
@@ -24,16 +32,17 @@
     width: 250px;
     height: 350px;
     object-fit: cover; /*no deforma la imagen, sino la corta*/
-    cursor: pointer;
-    transition: all 0.7s ease-in-out;
+    /*cursor: pointer;*/
+    /*transition: all 0.7s ease-in-out;*/
     position: relative;
     overflow: hidden;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .producto img:hover{
-    transform: scale(1.1);
+    /*transform: scale(1.1);*/
 }
 
 .producto-titulo{
@@ -54,4 +63,30 @@
     top: 515px;
     left: 60px;
     color:white;
+    cursor: pointer;
+}
+
+.btn-primary{
+    background: #7cbfb1;
+    padding: 10px 60px;
+    position: absolute;
+    top: 515px;
+    left: 60px;
+    color:white;
+}
+
+.btn-sucess:hover{
+    background: #1bd741;
+    color: white;
+}
+
+.btn-sucess{
+    background: rgba(72,194,169,255);
+    padding: 10px 60px;
+    color: white;
+}
+
+.bi-whatsapp{
+    position: absolute;
+    right: 30px;
 }

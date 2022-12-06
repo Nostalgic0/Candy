@@ -17,6 +17,7 @@ import { MesasComponent } from './components/mesas/mesas.component';
 import { PizarrasComponent } from './components/pizarras/pizarras.component';
 import { RepisasComponent } from './components/repisas/repisas.component';
 import { TodosProductosComponent } from './components/todos-productos/todos-productos.component';
+import { ProductomasComponent } from './components/productomas/productomas.component';
 
 const routes: Routes = [
   {path:'',component:InicioComponent},
@@ -35,7 +36,8 @@ const routes: Routes = [
   {path:'mesas',component:MesasComponent},
   {path:'pizarras',component:PizarrasComponent},
   {path:'repisas',component:RepisasComponent},
-  {path:'todos-productos',component:TodosProductosComponent}
+  {path:'todos-productos',component:TodosProductosComponent},
+  {path:'productomas',component: ProductomasComponent},
 
 ];
 
