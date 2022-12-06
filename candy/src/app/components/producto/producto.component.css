@@ -21,7 +21,7 @@
     
 }
 
-.producto img{
+.producto-imagen{
     width: 250px;
     height: 350px;
     object-fit: cover; /*no deforma la imagen, sino la corta*/
@@ -32,6 +32,26 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+}
+
+.producto-imagen-emergente{
+    width: 250px;
+    height: 350px;
+    object-fit: cover; /*no deforma la imagen, sino la corta*/
+    /*cursor: pointer;*/
+    /*transition: all 0.7s ease-in-out;*/
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    left: 70px;
+}
+
+.producto-precio-emergente{
+    /*font-weight: 300;*/
+    color: #ff4e00;
+    font-weight: bold;
 }
 
 .producto img:hover{
@@ -59,6 +79,10 @@
     cursor: pointer;
 }
 
+.modal-title{
+    text-align: center;
+}
+
 .btn-primary{
     background: #7cbfb1;
     padding: 10px 60px;
@@ -82,4 +106,8 @@
 .bi-whatsapp{
     position: absolute;
     right: 30px;
+}
+
+.descripcion-imagen-emergente{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
