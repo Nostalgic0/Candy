@@ -7,54 +7,27 @@
         <section>
             <div>
                 <h1 class="centrar">Mesas</h1>
-                    <main class="contenedor-main">
-                        <div class="contenedor-productos">
-                            <div class="producto" *ngFor="let mesas of mesas">
-                                            
-                                            <img src="{{mesas.fotoProducto}}" alt="" class="producto-imagen">
-                                            <div class="producto-descripcion">
-                                                <h4 class="producto-titulo">{{mesas.nombreProducto}}</h4>
-                                                <span class="producto-precio">${{mesas.precioProducto}}</span>
-                                                
-                                            </div>
-                                                <div class="btn_ventana_emergente">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                        Descripción
-                                                    </button>
-                                                    
-                                                    <!-- Modal -->
-                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header">
-                                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">{{mesas.nombreProducto}}</h1>
-                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    <img src="{{mesas.fotoProducto}}" alt="" class="producto-imagen">
-                                                                    <h4 class="descripcion-imagen-emergente">
-                                                                        {{mesas.descripcionProducto}}
-                                                                    </h4>
-                                                                    <span class="producto-precio">${{mesas.precioProducto}}</span>
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                    
-                                                                    <i class="bi bi-whatsapp"></i>
-                                                                    <li><a href="https://api.whatsapp.com/send?phone=56984302107&text=Hola%21%20Deje%20su%20mensaje."><button type="button" class="btn btn-sucess" >Ponerme en contacto</button></a></li>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                            
-                                        </div>
-                            </div>
-                            
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col" *ngFor="let mesas of mesas">
+                      <div class="card h-100">
+                        <img src="{{mesas.fotoProducto}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="producto-titulo">{{mesas.nombreProducto}}</h5>
+                          <h6  class="producto-precio">${{mesas.precioProducto}}</h6>
+                          <p class="card-text">{{mesas.descripcionProducto}}</p>
                         </div>
-                    </main>
-                </div>
-            </section>
-        </nav>
+                        <div class="card-footer">
+                            <div class="modal-footer">
+                                
+                                
+                                <i class="bi bi-whatsapp"></i>
+                                <li><a href="https://api.whatsapp.com/send?phone=56984302107&text=Hola%21%20Deje%20su%20mensaje."><button type="button" class="btn btn-sucess" >Ponerme en contacto</button></a></li>
+                            </div></div>
+                      </div>
+                    </div>
+                    
+                  </div>
+</div>
+</section>
+</nav>
 </body>
-

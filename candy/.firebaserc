@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "provenzalychic": {
+      "hosting": {
+        "candy": [
+          "provenzalychic"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "provenzalychic"
+  }
+}

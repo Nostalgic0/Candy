@@ -54,14 +54,7 @@
 }
 
 .producto:before{
-    content: "Descripción";
-    background: #7cbfb1;
-    padding: 10px 60px;
-    position: absolute;
-    top: 515px;
-    left: 60px;
-    color:white;
-    cursor: pointer;
+    
 }
 
 .btn-primary{
@@ -86,5 +79,5 @@
 
 .bi-whatsapp{
     position: absolute;
-    right: 30px;
+    right: 50px;
 }

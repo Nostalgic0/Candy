@@ -46,6 +46,7 @@
 .producto-titulo{
     margin-top: 10px;
     /*text-align: center;*/
+    text-align: justify;
 }
 
 .producto-precio{
@@ -88,3 +89,4 @@
     position: absolute;
     right: 30px;
 }
+

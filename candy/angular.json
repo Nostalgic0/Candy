@@ -94,6 +94,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "candy:build:production",
+            "firebaseProject": "provenzalychic",
+            "firebaseHostingSite": "provenzalychic"
+          }
         }
       }
     }
