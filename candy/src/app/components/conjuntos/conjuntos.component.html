@@ -5,14 +5,14 @@
 <body>
     <nav>
         <section>
-            <div>
+            <div class="container-lg">
                 <h1 class="centrar">Conjuntos</h1>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col" *ngFor="let conjuntos of conjuntos">
                       <div class="card h-100">
                         <img src="{{conjuntos.fotoProducto}}" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="producto-titulo">{{conjuntos.nombreProducto}}</h5>
+                          <h5 class="producto-titulo text-center">{{conjuntos.nombreProducto}}</h5>
                           <h6  class="producto-precio">${{conjuntos.precioProducto}}</h6>
                           <p class="card-text">{{conjuntos.descripcionProducto}}</p>
                         </div>
@@ -21,7 +21,7 @@
                                 
                                 
                                 <i class="bi bi-whatsapp"></i>
-                                <li><a href="https://api.whatsapp.com/send?phone=56984302107&text=Hola%21%20Deje%20su%20mensaje."><button type="button" class="btn btn-sucess" >Ponerme en contacto</button></a></li>
+                                <li><a href="https://api.whatsapp.com/send?phone=56984302107&text=Hola%21%20Quería%20consultar%20por%20el%20producto%20{{conjuntos.nombreProducto}}."><button type="button" class="btn btn-sucess" >Ponerme en contacto</button></a></li>
                             </div></div>
                       </div>
                     </div>
